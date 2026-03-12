@@ -15,3 +15,8 @@
 - `SOURCE/`: Mã nguồn dự án.
 - `TESTING/`: Kịch bản kiểm thử.
 - `INFRA/`: Cấu hình hệ thống.
+
+## 5. Quy tắc giao tiếp & Thông báo (Communication & Notification)
+- **Mã nguồn (Source Code):** Khi hoàn thành task và tạo PR trên GitHub, bắt buộc phải gửi email thông báo cho Leader để review.
+- **Tài liệu dự án (Rules/Plan/Quy trình chung):** Mọi thay đổi hoặc cập nhật mới liên quan đến tài liệu dự án, kế hoạch hoặc vấn đề chung phải gửi email thông báo cho cả Leader và Dev 1.
+- **Tiêu đề email:** Cần ghi rõ ràng theo định dạng `[VibeTin] - <Loại thông báo>: <Nội dung ngắn gọn>`.
