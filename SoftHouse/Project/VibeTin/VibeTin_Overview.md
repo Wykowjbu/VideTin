@@ -3,13 +3,14 @@
 ## 0. THÔNG TIN CHUNG
 - **Công ty:** SoftHouse
 - **Team Lead:** Nguyen Phan Huy
+- **Version (MVP):** 0.1.0 (Khởi tạo dự án Next.js)
 
 ## 1. TỔNG QUAN DỰ ÁN
 VibeTin là một nền tảng Cổng thông tin (Multi-content Portal) linh hoạt. Mục tiêu là xuất bản đa dạng nội dung: Bảng xếp hạng giải trí, Cẩm nang/Hướng dẫn, Tin tức công nghệ, đời sống, xã hội.
 Ưu tiên: Tốc độ cực nhanh, chuẩn SEO, CMS linh hoạt như xếp hình Lego.
 
-## 2. KIẾN TRÚC CÔNG NGHỆ (Tech Stack)
-- Frontend & Backend: Next.js
+## 2. KIẾN TRÚC CÔNG NỆ (Tech Stack)
+- Frontend & Backend: Next.js (Version: 15+)
 - Database: PostgreSQL
 - Media Storage: Google Cloud Storage
 - Hosting & Scale: Google Cloud Run
