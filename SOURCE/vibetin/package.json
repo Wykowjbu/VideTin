@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest"
   },
   "dependencies": {
+    "@prisma/client": "latest",
     "jose": "^6.2.1",
     "next": "latest",
     "react": "latest",
@@ -19,6 +21,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "prisma": "^7.5.0",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitest": "latest"
   }
 }
