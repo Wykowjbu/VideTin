@@ -1,23 +1,22 @@
-# Dự án: VibeTin - Coding Phase Plan
+# Dự án: VibeTin - Coding Phase Plan (Chi tiết)
 
 ## 1. Nguyên tắc triển khai
-- **Mọi task đều phải tạo nhánh:** `git checkout -b feature/<tên-tính-năng> develop`.
-- **Luồng tích hợp:** `feature/*` -> `develop` -> (Leader review) -> `main`.
+- **Luồng:** `feature/<task>` -> `develop` -> (Review) -> `main`.
+- **Báo cáo:** Dev 1 làm xong báo Dev 2 test -> Dev 2 báo Leader (email) -> Leader merge.
 
-## 2. Các giai đoạn thực hiện (Coding Phase)
+## 2. Chi tiết các Task (Backlog)
 
-| Giai đoạn | Nhiệm vụ | Nhánh dự kiến | Trách nhiệm |
-| :--- | :--- | :--- | :--- |
-| **Giai đoạn 1** | Setup Docker, Dev Environment & Base Next.js | `feature/base-setup` | Dev 1 |
-| **Giai đoạn 2** | Database Schema (PostgreSQL) | `feature/db-schema` | Dev 1 |
-| **Giai đoạn 3** | CMS Core & Admin Dashboard (Dynamic Blocks) | `feature/cms-core` | Dev 1 |
-| **Giai đoạn 4** | Frontend, SEO, Page Layouts | `feature/frontend-ui` | Dev 1 |
-| **Giai đoạn 5** | Testing (Unit/Integration) & Infra (CI/CD) | `feature/testing-infra` | Dev 2 |
-| **Giai đoạn 6** | Deployment (GCP Cloud Run) | `feature/deploy-prod` | Dev 2 |
+| Task ID | Tên Task | Mô tả chi tiết | Trách nhiệm | Nhánh dự kiến |
+| :--- | :--- | :--- | :--- | :--- |
+| **T01** | Setup & Base | Cấu hình Next.js, folder structure, ESLint, Prettier | Dev 1 | `feature/init-project` |
+| **T02** | Database Schema | Thiết kế PostgreSQL (User, Article, Tag, Category) | Dev 1 | `feature/db-schema` |
+| **T03** | Auth Logic | Chức năng Đăng nhập, Đăng ký, JWT/Session | Dev 1 | `feature/auth` |
+| **T04** | CMS Core | Dashboard quản trị, CRUD bài viết, Dynamic Blocks | Dev 1 | `feature/cms-admin` |
+| **T05** | Frontend & SEO | Hiển thị bài viết, SEO Metadata, Responsive | Dev 1 | `feature/frontend` |
+| **T06** | Test & Infra | Viết Unit Test, Dockerize, CI/CD Pipeline | Dev 2 | `feature/testing-infra` |
+| **T07** | Deploy Prod | Cấu hình Google Cloud Run, Cloud SQL, Domain | Dev 2 | `feature/deploy-prod` |
 
-## 3. Quy trình thực hiện Task
-1. Dev nhận task, tạo nhánh từ `develop`.
-2. Code, test nội bộ.
-3. Tạo PR từ `feature/*` sang `develop`.
-4. Gửi email thông báo Leader review.
-5. Leader merge vào `develop`.
+## 3. Quy trình thực hiện (Nhắc nhở)
+1. **Trước khi làm:** `git checkout develop` -> `git pull` -> `git checkout -b feature/<task-id>`
+2. **Sau khi xong:** Push nhánh lên -> Tạo PR vào `develop` -> **Gửi email thông báo Leader review.**
+3. **Kiểm thử:** Dev 2 nhận PR, chạy bộ test trong `TESTING/`. Nếu fail, trả về Dev 1 sửa. Nếu pass, Dev 2 báo Leader merge.

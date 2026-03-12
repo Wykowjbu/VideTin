@@ -11,14 +11,20 @@
 3. **Merge Request:** Tạo PR từ nhánh tính năng vào `develop`.
 4. **Review & Merge:** Gửi email báo cáo cho Leader để review. Chỉ sau khi Leader phê duyệt, Leader hoặc người được chỉ định mới được merge PR vào `develop`.
 
-## 3. Quy tắc thư mục
+## 3. Quy tắc kiểm thử (Testing Rules)
+- **Bắt buộc:** Mỗi PR/Task mới phải đi kèm các Unit Test/Integration Test trong thư mục `SOURCE/vibetin/tests/`.
+- **Review:** Dev 2 chỉ review code khi PR đi kèm test suite đầy đủ và đạt kết quả `PASS`.
+- **Automation:** Mọi PR sẽ bị từ chối nếu test case bị lỗi hoặc không có test case.
+
+## 4. Quy tắc thư mục
 - `DOCS/`: Tài liệu kỹ thuật, kế hoạch (`PLANNING.md`, `RULES.md`).
 - `WORKFLOW/`: Quy trình vận hành và tài liệu hướng dẫn.
 - `SOURCE/`: Mã nguồn dự án.
 - `TESTING/`: Kịch bản kiểm thử.
 - `INFRA/`: Cấu hình hệ thống.
 
-## 5. Quy tắc giao tiếp & Thông báo (Communication & Notification)
-- **Mã nguồn (Source Code):** Khi hoàn thành task và tạo PR từ nhánh tính năng vào `develop`, bắt buộc phải gửi email thông báo cho Leader để review.
-- **Tài liệu dự án (Rules/Plan/Quy trình chung):** Mọi thay đổi hoặc cập nhật mới liên quan đến tài liệu dự án, kế hoạch hoặc vấn đề chung phải gửi email thông báo cho cả Leader và Dev 1.
-- **Tiêu đề email:** Cần ghi rõ ràng theo định dạng `[VibeTin] - <Loại thông báo>: <Nội dung ngắn gọn>`.
+## 5. Quy trình Review & Bàn giao (Review & Handoff)
+- **Review:** Dev 2 thực hiện review và kiểm thử PR của Dev 1.
+- **Nếu OK:** Dev 2 gửi email cho Leader (thông báo PR đã OK, đề nghị merge) và Dev 1 (nhắc nhở thực hiện task tiếp theo theo plan).
+- **Nếu lỗi (Bug):** Dev 2 log issue trên GitHub, gửi email thông báo cho Dev 1 để sửa.
+- **Thông báo PR:** Khi hoàn thành task và tạo PR, email gửi Leader bắt buộc bao gồm thông tin: **Nhánh nguồn (Source Branch)** và **Nhánh đích (Target Branch)**.

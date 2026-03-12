@@ -13,7 +13,10 @@
 3. **Tạo PR (Merge Request):** 
    - Khi hoàn thành task, tạo PR từ nhánh `feature/*` vào nhánh `develop`.
    - **Báo cáo:** Gửi email thông báo cho Leader để review.
-4. **Review & Test:** Leader review PR và Dev 1 thực hiện test. Sau khi mọi thứ "xanh" (đạt yêu cầu), Leader sẽ duyệt và merge PR vào `develop`.
+4. **Review & Handoff:** 
+   - Dev 2 review PR từ Dev 1.
+   - Nếu Code "OK": Dev 2 gửi email thông báo cho Leader (để Merge) và Dev 1 (để làm task tiếp theo).
+   - Nếu lỗi: Dev 2 log bug trên GitHub và gửi email báo Dev 1 sửa.
 5. **Release (vào main):** Sau khi các tính năng trên `develop` đã được test kỹ và Leader đồng ý, Leader mới cho phép tạo PR từ `develop` lên `main` để deploy.
 
 ## 3. Báo cáo thay đổi
