@@ -18,7 +18,8 @@
 - `TESTING/`: Kịch bản kiểm thử.
 - `INFRA/`: Cấu hình hệ thống.
 
-## 5. Quy tắc giao tiếp & Thông báo (Communication & Notification)
-- **Mã nguồn (Source Code):** Khi hoàn thành task và tạo PR từ nhánh tính năng vào `develop`, bắt buộc phải gửi email thông báo cho Leader để review.
-- **Tài liệu dự án (Rules/Plan/Quy trình chung):** Mọi thay đổi hoặc cập nhật mới liên quan đến tài liệu dự án, kế hoạch hoặc vấn đề chung phải gửi email thông báo cho cả Leader và Dev 1.
-- **Tiêu đề email:** Cần ghi rõ ràng theo định dạng `[VibeTin] - <Loại thông báo>: <Nội dung ngắn gọn>`.
+## 5. Quy trình Review & Bàn giao (Review & Handoff)
+- **Review:** Dev 2 thực hiện review và kiểm thử PR của Dev 1.
+- **Nếu OK:** Dev 2 gửi email cho Leader (thông báo PR đã OK, đề nghị merge) và Dev 1 (nhắc nhở thực hiện task tiếp theo theo plan).
+- **Nếu lỗi (Bug):** Dev 2 log issue trên GitHub, gửi email thông báo cho Dev 1 để sửa.
+- **Thông báo PR:** Khi hoàn thành task và tạo PR, email gửi Leader bắt buộc bao gồm thông tin: **Nhánh nguồn (Source Branch)** và **Nhánh đích (Target Branch)**.
