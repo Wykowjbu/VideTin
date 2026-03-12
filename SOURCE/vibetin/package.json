@@ -17,6 +17,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "prisma": "^7.5.0",
     "typescript": "latest"
   }
 }
