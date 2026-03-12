@@ -11,7 +11,12 @@
 3. **Merge Request:** Tạo PR từ nhánh tính năng vào `develop`.
 4. **Review & Merge:** Gửi email báo cáo cho Leader để review. Chỉ sau khi Leader phê duyệt, Leader hoặc người được chỉ định mới được merge PR vào `develop`.
 
-## 3. Quy tắc thư mục
+## 3. Quy tắc kiểm thử (Testing Rules)
+- **Bắt buộc:** Mỗi PR/Task mới phải đi kèm các Unit Test/Integration Test trong thư mục `SOURCE/vibetin/tests/`.
+- **Review:** Dev 2 chỉ review code khi PR đi kèm test suite đầy đủ và đạt kết quả `PASS`.
+- **Automation:** Mọi PR sẽ bị từ chối nếu test case bị lỗi hoặc không có test case.
+
+## 4. Quy tắc thư mục
 - `DOCS/`: Tài liệu kỹ thuật, kế hoạch (`PLANNING.md`, `RULES.md`).
 - `WORKFLOW/`: Quy trình vận hành và tài liệu hướng dẫn.
 - `SOURCE/`: Mã nguồn dự án.
