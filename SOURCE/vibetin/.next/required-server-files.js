@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/hantuyettu2905/.openclaw/workspace/SOURCE/vibetin",
+    "outputFileTracingRoot": "/home/hantuyettu2905/.openclaw/workspace/SoftHouse/Project/VideTin/SOURCE/vibetin",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -294,11 +294,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "/home/hantuyettu2905/.openclaw/workspace/SOURCE/vibetin"
+      "root": "/home/hantuyettu2905/.openclaw/workspace/SoftHouse/Project/VideTin/SOURCE/vibetin"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/home/hantuyettu2905/.openclaw/workspace/SOURCE/vibetin",
+  "appDir": "/home/hantuyettu2905/.openclaw/workspace/SoftHouse/Project/VideTin/SOURCE/vibetin",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
